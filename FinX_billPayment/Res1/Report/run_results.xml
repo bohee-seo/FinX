@@ -1,0 +1,853 @@
+<?xml version="1.0"?>
+<Results version="1.0">
+<ReportNode type="testrun">
+<ReportNode type="Iteration">
+<ReportNode type="Action">
+<ReportNode type="User">
+<Data>
+    <Name>AIUtil.SetContext</Name>
+    <Description>Set context Device("Device") for AIUtil</Description>
+    <StartTime>2020-11-24 03:42:22</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <IconKey>6011d993a1494798af0380832cd953de</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <IsPlainTextStepInfo>True</IsPlainTextStepInfo>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>FinX.Launch</Name>
+    <Description>1</Description>
+    <StartTime>2020-11-24 03:42:24</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>App</Type>
+            <Name><![CDATA[FinX]]></Name>
+          </Object>
+        </Path>
+        <Operation>Launch</Operation>
+        <OperationData><![CDATA[1]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[instrumented]]></Name>
+            <Value><![CDATA[False]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[identifier]]></Name>
+            <Value><![CDATA[com.korffr.finx]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>82b25c46b8314b5990612d3ce5ab45c5</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil("input", "Password").Type</Name>
+    <Description>"Adv@ntage123"</Description>
+    <StartTime>2020-11-24 03:42:30</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil("input", "Password")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>99.97</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil("input", "Password")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Type</Operation>
+        <OperationData><![CDATA["Adv@ntage123"]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Password]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[input]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:26.182</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil("button", "Login").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:35</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil("button", "Login")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>99.85</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil("button", "Login")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Login]]></Value>
+          </Property>
+          <Property>
+            <Name><![CDATA[class]]></Name>
+            <Value><![CDATA[button]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:31.687</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Home").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:38</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Home")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Home")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Home]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:36.354</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Device.Back</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:42</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+        </Path>
+        <Operation>Back</Operation>
+      </TestObject>
+      <IconKey>4251eaebf50b41d7bdb775d9d8f1e0e9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:40.025</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Bill Payment").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:46</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Bill Payment")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Bill Payment")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Bill Payment]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:43.542</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("checking Account: 543875").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:50</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("checking Account: 543875")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("checking Account: 543875")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[checking Account: 543875]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:47.971</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindText("water").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:53</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindText("water")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindText("water")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[water]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:51.627</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Amount").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:57</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Amount")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Amount")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Amount]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:55.090</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Memo").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:43:01</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Memo")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Memo")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Memo]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:42:58.804</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Make Payment").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:43:05</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Make Payment")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Make Payment")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Make Payment]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:43:02.775</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Device [samsung SM-N960F]</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;ID: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;254b8c94771c7ece&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Manufacturer: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;samsung&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Model: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;SM-N960F&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Type: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;ANDROID&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Version: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Source: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;MC&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2020-11-24 03:42:24</StartTime>
+    <Duration>41</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+        </Path>
+        <Operation> [samsung SM-N960F]</Operation>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">ID: </span><span style="text-align : left; font-size : 12px; ">254b8c94771c7ece</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Manufacturer: </span><span style="text-align : left; font-size : 12px; ">samsung</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Model: </span><span style="text-align : left; font-size : 12px; ">SM-N960F</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Type: </span><span style="text-align : left; font-size : 12px; ">ANDROID</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Version: </span><span style="text-align : left; font-size : 12px; ">10</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Source: </span><span style="text-align : left; font-size : 12px; ">MC</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>4251eaebf50b41d7bdb775d9d8f1e0e9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Object required: 'AIUtill'</Name>
+    <ErrorText>Object required: 'AIUtill'</ErrorText>
+    <Description>&lt;BR/&gt;Line (38): &amp;quot;AIUtill.FindText(&amp;quot;Confirm&amp;quot;).CheckExists true&amp;quot;.</Description>
+    <StartTime>2020-11-24 03:43:05</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[Action1]]></ModuleName>
+          <FileName><![CDATA[Action1]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[AIUtill.FindText("Confirm").CheckExists true]]></Scripts>
+          <LineNo><![CDATA[38]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <IconKey>ed9c172d185f486d885b25aa766a67d6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\250902ee-9b6e-4931-a937-943abef9a468.jpeg" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindTextBlock("Make Payment").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:43:15</StartTime>
+    <Result>Done</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindTextBlock("Make Payment")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>100.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Make Payment")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Make Payment]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:43:13.481</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Device [samsung SM-N960F]</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;ID: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;254b8c94771c7ece&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Manufacturer: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;samsung&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Model: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;SM-N960F&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Type: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;ANDROID&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Version: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Source: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;MC&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2020-11-24 03:43:15</StartTime>
+    <Duration>0</Duration>
+    <Result>Done</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+        </Path>
+        <Operation> [samsung SM-N960F]</Operation>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">ID: </span><span style="text-align : left; font-size : 12px; ">254b8c94771c7ece</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Manufacturer: </span><span style="text-align : left; font-size : 12px; ">samsung</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Model: </span><span style="text-align : left; font-size : 12px; ">SM-N960F</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Type: </span><span style="text-align : left; font-size : 12px; ">ANDROID</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Version: </span><span style="text-align : left; font-size : 12px; ">10</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Source: </span><span style="text-align : left; font-size : 12px; ">MC</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>4251eaebf50b41d7bdb775d9d8f1e0e9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>Object required: 'AIUtill'</Name>
+    <ErrorText>Object required: 'AIUtill'</ErrorText>
+    <Description>&lt;BR/&gt;Line (43): &amp;quot;AIUtill.FindText(&amp;quot;paid&amp;quot;).CheckExists true&amp;quot;.</Description>
+    <StartTime>2020-11-24 03:43:15</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[Action1]]></ModuleName>
+          <FileName><![CDATA[Action1]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[AIUtill.FindText("paid").CheckExists true]]></Scripts>
+          <LineNo><![CDATA[43]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindTextBlock("Make Payment")]]></Name>
+          </Object>
+        </Path>
+        <OperationData><![CDATA[<BR/>Line (43): &quot;AIUtill.FindText(&quot;paid&quot;).CheckExists true&quot;.]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[Make Payment]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>ed9c172d185f486d885b25aa766a67d6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\a4fdf631-cdd1-4b64-982c-0cef2a4eea73.jpeg" highlight="647,1979,361,52" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Device [samsung SM-N960F]</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;ID: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;254b8c94771c7ece&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Manufacturer: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;samsung&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Model: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;SM-N960F&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Type: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;ANDROID&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Version: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Source: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;MC&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2020-11-24 03:43:15</StartTime>
+    <Duration>18</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+        </Path>
+        <Operation> [samsung SM-N960F]</Operation>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">ID: </span><span style="text-align : left; font-size : 12px; ">254b8c94771c7ece</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Manufacturer: </span><span style="text-align : left; font-size : 12px; ">samsung</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Model: </span><span style="text-align : left; font-size : 12px; ">SM-N960F</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Type: </span><span style="text-align : left; font-size : 12px; ">ANDROID</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Version: </span><span style="text-align : left; font-size : 12px; ">10</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Source: </span><span style="text-align : left; font-size : 12px; ">MC</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>4251eaebf50b41d7bdb775d9d8f1e0e9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Failed to locate the object. The anchor AI object was not found.</Name>
+    <ErrorText>Failed to locate the object. The anchor AI object was not found.</ErrorText>
+    <Description>&lt;BR/&gt;Line (45): &amp;quot;newBalance= AIUtil.FindText(micAnyText, micWithAnchorOnLeft, oAnchor).GetText&amp;quot;.</Description>
+    <StartTime>2020-11-24 03:43:33</StartTime>
+    <Result>Failed</Result>
+    <Extension>
+      <StackTrace>
+        <StackFrame>
+          <ModuleName><![CDATA[Action1]]></ModuleName>
+          <FileName><![CDATA[Action1]]></FileName>
+          <Language><![CDATA[VBScript - script block]]></Language>
+          <FunctionName><![CDATA[VBScript global code]]></FunctionName>
+          <Scripts><![CDATA[newBalance= AIUtil.FindText(micAnyText, micWithAnchorOnLeft, oAnchor).GetText]]></Scripts>
+          <LineNo><![CDATA[45]]></LineNo>
+        </StackFrame>
+      </StackTrace>
+      <IconKey>ed9c172d185f486d885b25aa766a67d6</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <MergeIsErrorIcon>True</MergeIsErrorIcon>
+    </Extension>
+    <Snapshot reference="Resources\Snapshots\05300f4f-8fc4-485b-ac5c-402c98fa5494.jpeg" />
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Context">
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindText("OK").Click</Name>
+    <Description />
+    <StartTime>2020-11-24 03:44:45</StartTime>
+    <Result>Warning</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindText("OK")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>0.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindText("OK")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[OK]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <DeviceInfo>
+      <DeviceTime>2020-11-24 19:44:07.022</DeviceTime>
+      <TimeZone>UTC+08:00 Singapore Standard Time</TimeZone>
+    </DeviceInfo>
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>AIUtil.FindText("OK").Click</Name>
+    <Description>Cannot&amp;nbsp;identify&amp;nbsp;the&amp;nbsp;object&amp;nbsp;"AIUtil.FindText("OK")".&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;Object's physical description:&lt;br&gt;Text = OK&lt;br&gt;DHTML Class = text&lt;br&gt;</Description>
+    <StartTime>2020-11-24 03:44:45</StartTime>
+    <Result>Warning</Result>
+    <Extension>
+      <Tooltip>AIUtil.FindText("OK")</Tooltip>
+      <AIInfo>
+        <AIMatchScore>0.00</AIMatchScore>
+        <AITextMatchMethod>micAIMatch</AITextMatchMethod>
+      </AIInfo>
+      <TestObject>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+          <Object>
+            <Type>AIObject</Type>
+            <Name><![CDATA[AIUtil.FindText("OK")]]></Name>
+          </Object>
+        </Path>
+        <Operation>Click</Operation>
+        <OperationData><![CDATA[Cannot&nbsp;identify&nbsp;the&nbsp;object&nbsp;"AIUtil.FindText("OK")".<br/>]]></OperationData>
+        <Properties>
+          <Property>
+            <Name><![CDATA[text]]></Name>
+            <Value><![CDATA[OK]]></Value>
+          </Property>
+        </Properties>
+      </TestObject>
+      <IconKey>09a98ef2371547ada0d7d127bbb27e5b</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+      <NodeType>Run Error</NodeType>
+    </Extension>
+    <DeviceInfo />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2020-11-24 03:44:45</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>5a63fb97fdfc48bd98683df7a386e918</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Device [samsung SM-N960F]</Name>
+    <Description>&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;ID: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;254b8c94771c7ece&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Manufacturer: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;samsung&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Model: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;SM-N960F&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Type: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;ANDROID&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;OS Version: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;10&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;span style="text-align : left; font-size : 12px; font-weight : 600; "&gt;Source: &lt;/span&gt;&lt;span style="text-align : left; font-size : 12px; "&gt;MC&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</Description>
+    <StartTime>2020-11-24 03:44:45</StartTime>
+    <Duration>0</Duration>
+    <Result>Warning</Result>
+    <Extension>
+      <TestObject>
+        <Repository>Local</Repository>
+        <Path>
+          <Object>
+            <Type>Device</Type>
+            <Name><![CDATA[Device]]></Name>
+          </Object>
+        </Path>
+        <Operation> [samsung SM-N960F]</Operation>
+        <OperationData><![CDATA[<table><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">ID: </span><span style="text-align : left; font-size : 12px; ">254b8c94771c7ece</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Manufacturer: </span><span style="text-align : left; font-size : 12px; ">samsung</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Model: </span><span style="text-align : left; font-size : 12px; ">SM-N960F</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Type: </span><span style="text-align : left; font-size : 12px; ">ANDROID</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">OS Version: </span><span style="text-align : left; font-size : 12px; ">10</span></td></tr><tr><td><span style="text-align : left; font-size : 12px; font-weight : 600; ">Source: </span><span style="text-align : left; font-size : 12px; ">MC</span></td></tr></table>]]></OperationData>
+      </TestObject>
+      <IconKey>4251eaebf50b41d7bdb775d9d8f1e0e9</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action1</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:20</StartTime>
+    <Duration>145</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>93484d11d4184f728bbcf264af189d6c</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>Action0</Name>
+    <Description />
+    <StartTime>2020-11-24 03:42:20</StartTime>
+    <Duration>145</Duration>
+    <Result>Failed</Result>
+    <Extension>
+      <IconKey>bab377188f044ca0860e90311b1d9e04</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Index>1</Index>
+    <TestedApplications />
+  </Data>
+</ReportNode>
+<ReportNode type="Step">
+<Data>
+    <Name>Stop Run</Name>
+    <Description>Run stopped by user.</Description>
+    <StartTime>2020-11-24 03:44:45</StartTime>
+    <Result>Information</Result>
+    <Extension>
+      <IconKey>533da5f48c864a14ac768609f3a6036d</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+  </Data>
+</ReportNode>
+<Data>
+    <Name>FinX_billPayment</Name>
+    <ToolName>Micro Focus Unified Functional Testing</ToolName>
+    <ToolVersion>0</ToolVersion>
+    <ToolVersionStringLiteral>15.0.2</ToolVersionStringLiteral>
+    <Description />
+    <StartTime>2020-11-24 03:42:19</StartTime>
+    <Duration>146</Duration>
+    <Result>Failed</Result>
+    <InputParameters />
+    <Extension>
+      <IconKey>45e59627549241c2b1d204dd0712aefc</IconKey>
+      <IsPlainTextNodeName>True</IsPlainTextNodeName>
+    </Extension>
+    <Environment>
+      <Timezone>-08:00:00</Timezone>
+      <Locale>English (United States)</Locale>
+      <User>demo</User>
+      <CpuInfo>Intel(R) Core(TM) i7-9850H CPU @ 2.60GHz</CpuInfo>
+      <NumberOfCores>4</NumberOfCores>
+      <TotalMemory>32767</TotalMemory>
+      <HostName>NIMBUSCLIENT</HostName>
+      <OSInfo>Windows 10</OSInfo>
+    </Environment>
+    <TestedApplications />
+    <Links>
+      <Link type="DataTable" reference="Default.xlsx" displayname="Default Data Table" />
+    </Links>
+  </Data>
+</ReportNode>
+<GeneralInfo>
+    <ResultName>Res1</ResultName>
+    <RunStartTime>2020-11-24 03:42:19</RunStartTime>
+    <Timezone>-08:00:00</Timezone>
+    <OrchestrationToolName>Micro Focus Unified Functional Testing</OrchestrationToolName>
+    <OrchestrationToolVersion>0</OrchestrationToolVersion>
+    <OrchestrationToolVersionStringLiteral>15.0.2</OrchestrationToolVersionStringLiteral>
+  </GeneralInfo>
+</Results>
