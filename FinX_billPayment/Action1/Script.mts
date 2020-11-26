@@ -1,58 +1,104 @@
-﻿Dim mySendKeys
-Set mySendKeys = CreateObject("WScript.shell")
-
-
-AIUtil.SetContext Device("Device")
+﻿AIUtil.SetContext Device("Device")
 Device("Device").App("FinX").Launch DoNotInstall, RestartApp
 
-'AIUtil("input", "Username").Type "jojo"
-AIUtil("input", "Password").Type "Adv@ntage123"
+fromAccount=Datatable.Value("fromAccount", "Global")
+toPayee=Datatable.Value("toPayee", "Global")  ' only "water" or "electricity" options are working 
+amount=Datatable.Value("Amount", "Global")
+memo=Datatable.Value("Memo", "Global")
+'######################################################
+'###Login
+'######################################################
+'AIUtil("input", "Username").TypeSecure Datatable.Value("userName", "Global")
+AIUtil("input", "Password").TypeSecure Datatable.value("Password","Global")
 AIUtil("button", "Login").Click
-AIUtil.FindTextBlock("Home").Click
-wait 5
-Set oAnchor = AIUtil.FindTextBlock("Your Balance", micFromLeft, 1)
-beforeBalance= AIUtil.FindText(micAnyText, micWithAnchorAbove, oAnchor).GetText
-print "beforebalance = " & beforeBalance
+AIUtil.FindTextBlock("Navigation").CheckExists true
 
+'######################################################
+'###Check current Balance in Home
+'######################################################
+AIUtil.FindTextBlock("Home").Click
+AIUtil.FindTextBlock("Last Transactions See all transactions").CheckExists true
+Set oAnchor = AIUtil.FindTextBlock("Your Balance", micFromLeft, 1)
+currentBalance= AIUtil.FindText(micAnyText, micWithAnchorAbove, oAnchor).GetText
+beforeBalance=getBalance(currentBalance)
+print "beforeBalance = " &beforeBalance
 Device("Device").Back 'back to home
 
+'######################################################
+'###Bill Payment
+'######################################################
+AIUtil.FindTextBlock("Bill Payment").CheckExists true
 AIUtil.FindTextBlock("Bill Payment").Click
-AIUtil.FindTextBlock("checking Account: 543875").Click
-AIUtil.FindText("water").Click
+AIUtil.FindTextBlock("Select Payee").CheckExists true
+AIUtil.FindText(fromAccount).Click
+'AIUtil.RunSettings.AutoScroll.Enable "right", 1
+AIUtil.FindText(toPayee).Click
+'AIUtil.RunSettings.AutoScroll.Enable "down", 2
 AIUtil.FindTextBlock("Amount").Click
-
-mySendKeys.SendKeys("5") 
-
+call setText(amount) 
+print "Payment amount =  "&amount
 AIUtil.FindTextBlock("Memo").Click
-
-mySendKeys.SendKeys("Power Payment") 
-
+call setText(memo) 
 AIUtil("button", "Make Payment").Click
 
-wait 5
-
+AIUtil.FindTextBlock("Confirm Bill Payment").CheckExists true
+AIUtil.FindText(fromAccount, micFromTop, 2).CheckExists true
+AIUtil.FindText(toPayee).CheckExists true
 AIUtil("button", "Make Payment", micFromTop, 1).Click
-
+AIUtil.FindTextBlock("S Your Bill has been paid").CheckExists true
 AIUtil.FindTextBlock("OK").Click
-
 Device("Device").Back  'back to home
+AIUtil.FindTextBlock("Navigation").CheckExists true
 
-
+'#######################################################
+'###Check current balance after bill payment
+'#######################################################
 AIUtil.FindTextBlock("Home").Click
+AIUtil.FindTextBlock("Last Transactions See all transactions").CheckExists true
+Set oAnchor = AIUtil.FindTextBlock("Your Balance", micFromLeft, 1)
+currentBalance= AIUtil.FindText(micAnyText, micWithAnchorAbove, oAnchor).GetText
+afterBalance=getBalance(currentBalance)
+print "afterBalance = "&afterBalance
 
-wait 5
-Set oAnchor = AIUtil.FindTextBlock("Created on", micFromLeft, 1)
-afterBalance= AIUtil.FindText(micAnyText, micWithAnchorBelow, oAnchor).GetText
-print "afterBalance = " & afterBalance
-
+If int(afterBalance)=int(beforeBalance)-int(amount) Then
+	Reporter.ReportEvent micPass, "Balance Check", "Current Balance after payment is correct"
+	print beforeBalance&" - "&amount&" = "&afterBalance
+Else
+	Reporter.ReportEvent micFail, "Balance Check", "Current Balance after payment is not correct"
+End If
 Device("Device").Back 'back to home
 
+'#########################################################
+'###Logout
+'#########################################################
 AIUtil("button", "Logout" + vbLf + "Log out of" + vbLf + "Advantage").Click
 
 
 
+Sub setText(textValue)
+Dim mySendKeys
+Set mySendKeys = CreateObject("WScript.shell")
+mySendKeys.SendKeys(textValue)
+End Sub
 
 
+
+
+Function getBalance(byRef value)
+	
+
+	a = Split(value)
+	         b = ubound(a)
+	         
+	         For i = 0 to b
+		         'print "The value of array in " & i & " is :"  & a(i)
+			         If i=1 Then
+			         	getBalance = a(i)
+			         	'print getBalance
+			         End If
+	         Next
+
+End Function
 
 
 
