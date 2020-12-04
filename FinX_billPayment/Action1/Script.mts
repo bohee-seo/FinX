@@ -17,7 +17,7 @@ AIUtil.FindTextBlock("Navigation").CheckExists true
 '###Check current Balance in Home
 '######################################################
 AIUtil.FindTextBlock("Home").Click
-AIUtil.FindTextBlock("Last Transactions See all transactions").CheckExists true
+AIUtil.FindTextBlock("Last Transactions").CheckExists true
 Set oAnchor = AIUtil.FindTextBlock("Your Balance", micFromLeft, 1)
 currentBalance= AIUtil.FindText(micAnyText, micWithAnchorAbove, oAnchor).GetText
 beforeBalance=getBalance(currentBalance)
@@ -54,7 +54,7 @@ AIUtil.FindTextBlock("Navigation").CheckExists true
 '###Check current balance after bill payment
 '#######################################################
 AIUtil.FindTextBlock("Home").Click
-AIUtil.FindTextBlock("Last Transactions See all transactions").CheckExists true
+AIUtil.FindTextBlock("Last Transactions").CheckExists true
 Set oAnchor = AIUtil.FindTextBlock("Your Balance", micFromLeft, 1)
 currentBalance= AIUtil.FindText(micAnyText, micWithAnchorAbove, oAnchor).GetText
 afterBalance=getBalance(currentBalance)
