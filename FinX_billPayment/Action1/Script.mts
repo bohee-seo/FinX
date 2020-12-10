@@ -1,15 +1,17 @@
 ﻿AIUtil.SetContext Device("Device")
-Device("Device").App("FinX").Launch DoNotInstall, RestartApp
+Device("Device").App("FinX").Launch Install
 
 fromAccount=Datatable.Value("fromAccount", "Global")
-toPayee=Datatable.Value("toPayee", "Global")  ' only "water" or "electricity" options are working 
+toPayee=Datatable.Value("toPayee", "Global")  
 amount=Datatable.Value("Amount", "Global")
 memo=Datatable.Value("Memo", "Global")
 '######################################################
 '###Login
 '######################################################
-'AIUtil("input", "Username").TypeSecure Datatable.Value("userName", "Global")
+AIUtil("input", "Username").TypeSecure Datatable.Value("userName", "Global")
 AIUtil("input", "Password").TypeSecure Datatable.value("Password","Global")
+AIUtil("input", "Environment Name").Type "UAT"
+AIUtil("input", "URL").Type "http://svserver.advantageinc.org:6070/"
 AIUtil("button", "Login").Click
 AIUtil.FindTextBlock("Navigation").CheckExists true
 
